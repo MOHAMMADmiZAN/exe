@@ -322,11 +322,16 @@ nav .nav-link:hover:before {
     padding: 0 20px;
 
 }
-
+#portfolio .portfolioMenu ul{
+    display: flex;
+    justify-content: space-around;
+}
 #portfolio .portfolioMenu ul li {
     padding: 12px;
     transition: 0.4s;
     position: relative;
+
+
 }
 
 #portfolio .portfolioMenu ul li a {
@@ -334,7 +339,6 @@ nav .nav-link:hover:before {
     font-weight: 600;
     font-size: 14px;
     color: #363636;
-    margin: 15px;
     transition: 0.4s;
 
 }
