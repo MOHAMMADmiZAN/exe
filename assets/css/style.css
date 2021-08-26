@@ -929,10 +929,11 @@ nav .nav-link:hover:before {
 
 /*option end*/
 /*brand start*/
-#brand{
+#brand {
     position: relative;
 }
-#brand .brand_content{
+
+#brand .brand_content {
     background: url("../images/brand/brand_bg.png") center no-repeat;
     background-size: cover;
     padding: 80px 0;
@@ -943,10 +944,104 @@ nav .nav-link:hover:before {
     z-index: 2;
 
 }
-#brand .img_item{
+
+#brand .img_item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
+
 /*brand end*/
+/* footer start*/
+#footer {
+    background: #252525;
+    padding: 50px;
+    margin-top: 153px;
+
+}
+
+#footer .footer_content_one .f_one_text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #363636;
+    padding: 25px 0;
+}
+
+#footer .footer_content_one a {
+    color: #e5493a;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 20px 0;
+
+}
+
+#footer .footer_content_one form label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+#footer .footer_content_one form input {
+    background: #171a1d;
+    border: none;
+    outline: none;
+    padding: 20px;
+
+}
+
+#footer .footer_content_one form input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #363636;
+}
+
+#footer .footer_content_one form .e_icon {
+    position: relative;
+}
+
+#footer .footer_content_one form .e_icon img {
+    position: absolute;
+    top: -25px;
+    right: 20px;
+}
+
+#footer .footer_title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+#footer .footer_title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 25%;
+    background: #e5493a;
+}
+
+#footer .footer_content_two .footer_content_item {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+}
+
+#footer .footer_content_two .footer_content_item .i_right {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #959595;
+    margin-left: 20px;
+}
+
+/* footer end*/
