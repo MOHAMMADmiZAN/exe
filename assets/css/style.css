@@ -1030,13 +1030,13 @@ nav .nav-link:hover:before {
     background: #e5493a;
 }
 
-#footer .footer_content_two .footer_content_item {
+#footer .footer_content_item {
     display: flex;
     padding: 30px 0;
     align-items: center;
 }
 
-#footer .footer_content_two .footer_content_item .i_right {
+#footer .footer_content_item .i_right {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
