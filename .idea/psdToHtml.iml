@@ -12,5 +12,6 @@
     <orderEntry type="library" name="all" level="application" />
     <orderEntry type="library" name="jquery-1.12.4" level="application" />
     <orderEntry type="library" name="umbrellajs" level="application" />
+    <orderEntry type="library" name="animate.css" level="application" />
   </component>
 </module>

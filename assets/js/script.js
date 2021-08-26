@@ -1,35 +1,34 @@
- // accordions //
+// accordions-bar //
 
 
-let whyItem = $('.why-accordion .item')
-let itemContent = $('.why-accordion .item-content')
-let itemOneP = $('.why-accordion .item p:nth-child(1)')
-let itemA = $('.why-choose-us-content .why-accordion .item a')
+// $('#aci-1').click(function () {
+//     $('#aci-1').toggleClass('clickItem')
+//     $('#p-1').toggleClass('p_bg')
+//     $('#ac-1 a').toggleClass('clickItemA');
+//     $('#acc-1').toggleClass(' d_none animate__animated animate__rotateIn')
+//
+// })
+// $('#aci-2').click(function () {
+//     $('#aci-2').toggleClass('clickItem')
+//     $('#p-2').toggleClass('p_bg')
+//     $('#ac-2 a').toggleClass('clickItemA');
+//     $('#acc-2').toggle(500)
+// })
+//
+// $('#aci-3').click(function () {
+//     $('#aci-3').toggleClass('clickItem')
+//     $('#p-3').toggleClass('p_bg')
+//     $('#ac-3 a').toggleClass('clickItemA');
+//     $('#acc-3').toggle(500)
+// })
+//
+// $('#aci-4').click(function () {
+//     $('#aci-4').toggleClass('clickItem')
+//     $('#p-4').toggleClass('p_bg')
+//     $('#ac-4 a').toggleClass('clickItemA');
+//     $('#acc-4').toggle(500)
+// })
 
 
-whyItem.click(function (e) {
 
-    if (whyItem.hasClass('item-sec')) {
-        console.log(
-            'fired'
-        )
-        whyItem.addClass('clickItem')
-        itemOneP.addClass('p_bg')
-        itemA.addClass('clickItemA')
-        itemContent.fadeIn('slower')
-        whyItem.removeClass('item-sec')
-    } else {
-        whyItem.removeClass('clickItem')
-        itemOneP.removeClass('p_bg')
-        itemA.removeClass('clickItemA')
-        itemContent.fadeOut('slower')
-        whyItem.addClass('item-sec')
-    }
-    // whyItem.toggleClass('clickItem')
-    // itemOneP.toggleClass('p_bg')
-    // itemA.toggleClass('clickItemA')
-    // itemContent.toggle(500)
-
-
-})
 
