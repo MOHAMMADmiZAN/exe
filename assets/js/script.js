@@ -159,3 +159,5 @@ $('.navbar-collapse ul li a').click(() => $('.navbar-toggler:visible').click());
 // $('.navbar-collapse a').click(function(){
 //     $(".navbar-collapse").collapse('hide');
 // });
+//preloader//
+win.on("load", () => $("#preloader").fadeOut("800"));
