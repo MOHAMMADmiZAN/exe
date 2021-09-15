@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+/*html,body{*/
+/*    scroll-behavior: smooth;*/
+/*}*/
 ol, ul, li {
     list-style: none;
     display: inline-block;
@@ -463,7 +466,6 @@ nav .nav-link:hover:before {
 #about {
     background: url(../images/about/about_bg.png) center no-repeat;
     background-size: cover;
-    height: 630px;
     margin-top: 30px;
     padding: 80px;
 }
@@ -672,23 +674,6 @@ nav .nav-link:hover:before {
     margin-top: 15px;
 }
 
-#why .why-slider ul {
-    margin-left: 30px;
-}
-
-#why .why-slider li {
-    width: 10px;
-    height: 10px;
-    background: #f2f2f2;
-    border-radius: 50%;
-    transition: 0.4s;
-    cursor: pointer;
-
-}
-
-#why .why-slider li:hover {
-    background: #e5493a;
-}
 
 /*why stop*/
 /*blog start*/
@@ -1045,3 +1030,115 @@ nav .nav-link:hover:before {
 }
 
 /* footer end*/
+
+.sticky {
+    background: rgba(54, 54, 54, 1);
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 222;
+}
+
+
+.sticky a {
+    color: #ffffff;
+}
+
+.sticky .navbar-brand {
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.back_to_top {
+    width: 70px;
+    height: 70px;
+    color: #e5493a;
+    font-size: 35px;
+    border-radius: 5px;
+    background: #959595;
+    text-align: center;
+    line-height: 70px;
+    position: fixed;;
+    top: 50%;
+    right: 60px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: none;
+}
+
+/*// why slider slick list //*/
+#why .slick-list {
+    height: 400px !important;
+}
+
+#why .slick-dots li button {
+    font-size: 0;
+    background: none;
+    border: none;
+}
+
+#why .slick-dots li {
+    width: 10px;
+    height: 10px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    transition: 0.4s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#why .slick-dots li:hover {
+    background: #e5493a;
+}
+
+#why .slick-dots {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*/// brand slider //*/
+#brand .prev {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translateY(-50%);
+}
+
+#brand .next {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+}
+
+.active {
+    /*background: #ffffff;*/
+    /*border-radius: 10px;*/
+    color: #e5493a !important;
+}
+
+.active:before {
+    width: 10px !important;
+}

@@ -12,8 +12,10 @@
           rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
           integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/slick.css">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
 <header>
@@ -77,18 +79,18 @@
     </div>
     <!--    header top stop-->
     <!--    nav bar start-->
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg w-out ">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="logo"/></a>
+            <a class="navbar-brand"><img src="./assets/images/logo.png" alt="logo"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Home
                         </a>
@@ -100,7 +102,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
@@ -115,7 +117,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Features
                         </a>
@@ -127,7 +129,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
@@ -243,23 +245,23 @@
     <div class="portfolioContent">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-10">
+                <div class="col-lg-10 col-sm-10">
                     <div class="portfolioMenu">
                         <ul>
-                            <li>All</li>
-                            <li>Website</li>
-                            <li>Logo</li>
-                            <li>Graphic Design</li>
-                            <li>Development</li>
-                            <li>Video</li>
-                            <li>Photography</li>
+                            <li data-filter="all">All</li>
+                            <li data-filter=".wb">Website</li>
+                            <li data-filter=".log">Logo</li>
+                            <li data-filter=".gh">Graphic Design</li>
+                            <li data-filter=".wd">Development</li>
+                            <li data-filter=".vid">Video</li>
+                            <li data-filter=".ph">Photography</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="portfolioItems">
-            <div class="portfolioItem">
+            <div class="portfolioItem mix wb">
                 <img src="./assets/images/portfolio/1.png" alt="1.png">
                 <div class="portfolioOverlay">
                     <div class="text">
@@ -273,7 +275,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolioItem">
+            <div class="portfolioItem mix wb">
                 <img src="./assets/images/portfolio/2.png" alt="2.png">
                 <div class="portfolioOverlay">
                     <div class="text">
@@ -287,8 +289,8 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolioItem">
-                <img src="./assets/images/portfolio/3.png" alt="3.png">
+            <div class="portfolioItem mix log">
+                <img src="./assets/images/portfolio/3.png" alt="3.png" width="384" height="258">
                 <div class="portfolioOverlay">
                     <div class="text">
                         <h5>Claritas Est Processus</h5>
@@ -301,7 +303,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolioItem">
+            <div class="portfolioItem mix vid">
                 <img src="./assets/images/portfolio/4.png" alt="4.png">
                 <div class="portfolioOverlay">
                     <div class="text">
@@ -315,7 +317,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolioItem">
+            <div class="portfolioItem mix vid">
                 <img src="./assets/images/portfolio/5.png" alt="5.png">
                 <div class="portfolioOverlay">
                     <div class="text">
@@ -329,7 +331,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolioItem">
+            <div class="portfolioItem mix vid">
                 <img src="./assets/images/portfolio/6.png" alt="6.png">
                 <div class="portfolioOverlay">
                     <div class="text">
@@ -343,7 +345,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolioItem">
+            <div class="portfolioItem mix wb">
                 <img src="./assets/images/portfolio/7.png" alt="7.png">
                 <div class="portfolioOverlay">
                     <div class="text">
@@ -357,7 +359,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolioItem mix pho">
+            <div class="portfolioItem mix ph">
                 <img src="./assets/images/portfolio/8.png" alt="8.png">
                 <div class="portfolioOverlay">
                     <div class="text">
@@ -371,7 +373,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolioItem mix w-deg">
+            <div class="portfolioItem mix wd">
                 <img src="./assets/images/portfolio/9.png" alt="9.png">
                 <div class="portfolioOverlay">
                     <div class="text">
@@ -385,7 +387,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolioItem mix w-dev">
+            <div class="portfolioItem mix wd">
                 <img src="./assets/images/portfolio/10.png" alt="10.png">
                 <div class="portfolioOverlay">
                     <div class="text">
@@ -419,7 +421,7 @@
             <div class="col-lg-3">
                 <div class="about-content">
                     <div class="about-content-count">
-                        <h6>6587</h6>
+                        <h6 class="counter">6587</h6>
                     </div>
                     <div class="about-content-text">
                         <h2>Satisfied Clients</h2>
@@ -430,7 +432,7 @@
             <div class="col-lg-3">
                 <div class="about-content">
                     <div class="about-content-count">
-                        <h6>896</h6>
+                        <h6 class="counter">896</h6>
                     </div>
                     <div class="about-content-text">
                         <h2>Completed Project</h2>
@@ -441,7 +443,7 @@
             <div class="col-lg-3">
                 <div class="about-content">
                     <div class="about-content-count">
-                        <h6>1674</h6>
+                        <h6 class="counter">1674</h6>
                     </div>
                     <div class="about-content-text">
                         <h2>Like On Average</h2>
@@ -452,7 +454,7 @@
             <div class="col-lg-3">
                 <div class="about-content">
                     <div class="about-content-count">
-                        <h6>789</h6>
+                        <h6 class="counter">789</h6>
                     </div>
                     <div class="about-content-text">
                         <h2>We Lunched</h2>
@@ -519,10 +521,10 @@
                         </div>
                     </div>
                     <div class="why-accordion" id="ac-3">
-                        <div class="item clickItem" id="aci-3"><p id="p-3" class="p_bg">Our Technology</p>
-                            <p>Duis autem vel iriure dolor in hendrerit</p><a class="clickItemA"><i
+                        <div class="item " id="aci-3"><p id="p-3">Our Technology</p>
+                            <p>Duis autem vel iriure dolor in hendrerit</p><a><i
                                     class="fas fa-chevron-right"></i></a></div>
-                        <div class="item-content d-block" id="acc-3">
+                        <div class="item-content" id="acc-3">
                             <p>
                                 Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
                                 Mirum
@@ -590,13 +592,45 @@
                                     euismod tincidunt ut laoreet dolore etiam processus dynamicus, qui sequitur.</p>
                             </div>
                         </div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        <div class="s_item">
+                            <div class="icon">
+                                <img src="./assets/images/about/p_2.png" alt="p2.png">
+                            </div>
+                            <div class="text_content">
+                                <div class="top_text">
+                                    <h5>Britney Doe</h5>
+                                    <span>www.themeforest.net</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore etiam processus dynamicus, qui sequitur.</p>
+                            </div>
+                        </div>
+                        <div class="s_item">
+                            <div class="icon">
+                                <img src="./assets/images/about/p_2.png" alt="p2.png">
+                            </div>
+                            <div class="text_content">
+                                <div class="top_text">
+                                    <h5>Britney Doe</h5>
+                                    <span>www.themeforest.net</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore etiam processus dynamicus, qui sequitur.</p>
+                            </div>
+                        </div>
+                        <div class="s_item">
+                            <div class="icon">
+                                <img src="./assets/images/about/p_2.png" alt="p2.png">
+                            </div>
+                            <div class="text_content">
+                                <div class="top_text">
+                                    <h5>Britney Doe</h5>
+                                    <span>www.themeforest.net</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore etiam processus dynamicus, qui sequitur.</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -739,6 +773,21 @@
                 <div class="img">
                     <img src="./assets/images/brand/b_05.png" alt="b_05.png">
                 </div>
+                <div class="img">
+                    <img src="./assets/images/brand/b_01.png" alt="b_01.png">
+                </div>
+                <div class="img">
+                    <img src="./assets/images/brand/b_02.png" alt="b_02.png">
+                </div>
+                <div class="img">
+                    <img src="./assets/images/brand/b_03.png" alt="b_03.png">
+                </div>
+                <div class="img">
+                    <img src="./assets/images/brand/b_04.png" alt="b_04.png">
+                </div>
+                <div class="img">
+                    <img src="./assets/images/brand/b_05.png" alt="b_05.png">
+                </div>
             </div>
         </div>
     </div>
@@ -746,7 +795,9 @@
 <!-- brand end-->
 <!-- footer start-->
 <section id="footer">
-    <div class="container">
+
+    <div class="container position-relative">
+        <div class="back_to_top"><i class="fas fa-level-up-alt"></i></div>
         <div class="row">
             <div class="col-lg-4">
                 <div class="footer_content_one">
@@ -810,15 +861,18 @@
 <!-- footer end-->
 
 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"
-        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
+<!--<script src="./assets/js/jquery-3.6.0.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+        crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
+<script src="./assets/js/waypoints.min.js"></script>
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
 <script src="./assets/js/mixitup.js"></script>
 <script src="./assets/js/script.js"></script>
 
